@@ -55,9 +55,9 @@ class Pasajero{
     {
         $cadena = '';
         $cadena = "Nombre: ". $this->getNombre().
-        "Apellido: ". $this->getApellido(). 
-        "Numero de documento: ". $this->getNroDocumento().
-        "Numero de telefono: ". $this->getNroTelefono();
+        "\n Apellido: ". $this->getApellido(). 
+        "\n Numero de documento: ". $this->getNroDocumento().
+        "\n Numero de telefono: ". $this->getNroTelefono(). "\n ";
         return $cadena;
     }
 

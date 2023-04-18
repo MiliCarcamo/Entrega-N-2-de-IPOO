@@ -56,9 +56,9 @@ class ResponsableV{
     {
         $cadena = '';
         $cadena = "Numero de empleado: ". $this->getNroEmpleado().
-        "Numero de Licencia: ". $this->getNroLicencia().
-        "Nombre: ". $this->getNombre().
-        "Apellido: ". $this->getApellido();
+        "\n Numero de Licencia: ". $this->getNroLicencia().
+        "\n Nombre: ". $this->getNombre().
+        "\n Apellido: ". $this->getApellido(). "\n ";
         return $cadena;
     }
 }

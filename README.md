@@ -1,7 +1,7 @@
 # Entrega N°2 de IPOO
 
 # Datos:
-Cárcamo, Milagros Sofia.
+Cárcamo, Milagros Sofia. "\n"
 Legajo: FAI-2987.
 Tecnicatura Universitaria en Desarrollo Web.
 

@@ -98,7 +98,9 @@ function informacionPasajeros($cantidad){
         $apellido = trim(fgets(STDIN));
         echo "Dni: ";
         $dni = trim(fgets(STDIN));
-
+        echo "Ingrese el telefono: ";
+        $telefono = trim(fgets(STDIN));
+        $objPasajero = new Pasajero($nombre, $apellido, $dni, $telefono);
         //Almaceno los datos de las personas
         $arrayPersonas[$i] = ['nombre' => $nombre, 'apellido' => $apellido, 'dni' =>$dni];
         

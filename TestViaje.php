@@ -72,8 +72,9 @@ function menu(){
     6) Modificar datos de un pasajero
     7) Modificar capacidad maxima
     8) Ver Responsable del Viaje.
-    9) Salir \n";
-    echo "Ingrese una opcion entre 1 y 9: ";
+    9) Modificar el responsable del viaje
+    10) Salir \n";
+    echo "Ingrese una opcion entre 1 y 10: ";
     $opcion = trim(fgets(STDIN));
 
     return $opcion;
@@ -191,12 +192,28 @@ do {
             # Ver Responsable del viaje
             echo $objResponsableV;
             break;
+        case '9':
+            #Modificar el responsable del viaje
+            echo "Ingrese el nombre del responsable del viaje:";
+            $nombreResponsableV = trim(fgets(STDIN));
+            echo "Apellido: ";
+            $apellidoResponsableV = trim(fgets(STDIN));
+            echo "Numero de empleado: ";
+            $nroEmpleado = trim(fgets(STDIN));
+            echo "Numero de licencia: ";
+            $nroLicencia = trim(fgets(STDIN));
+            $objResponsableV->setNombre($nombreResponsableV);
+            $objResponsableV->setApellido($apellidoResponsableV);
+            $objResponsableV->setNroEmpleado($nroEmpleado);
+            $objResponsableV->setNroLicencia($nroLicencia);
+            echo "Los datos del nuevo responsable es: ". $objResponsableV;
+            break;
         default:
             # code...
             break;
     }
     
-} while ($opcionSeleccionada != 9);
+} while ($opcionSeleccionada != 10);
 
 
 
